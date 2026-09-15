@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+:root {
+  --text: #6b6355;
+  --text-h: #3a2e1f;
+  --bg: #fefae0;
+  --bg-soft: #faedcd;
+  --border: #e3d9b8;
+  --code-bg: #faedcd;
+  --accent: #d4a373;
+  --accent-bg: rgba(212, 163, 115, 0.12);
+  --accent-border: rgba(212, 163, 115, 0.5);
+  --sage: #ccd5ae;
+  --sage-bg: #e9edc9;
+  --social-bg: rgba(233, 237, 201, 0.5);
+  --shadow:
+    rgba(58, 46, 31, 0.1) 0 10px 15px -3px, rgba(58, 46, 31, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  --sage-bg-rgb: 240, 244, 241; 
+  --sage-bg: rgb(var(--sage-bg-rgb)); 
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+body {
+  margin: 0;
+  background-image: url(./assets/bgimage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Prevents the background image from moving when scrolling */
+  background-attachment: fixed; 
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  
+  /* Creates a beautiful low-opacity background with a modern blur effect */
+  background-color: rgba(var(--sage-bg-rgb), -5); 
+  backdrop-filter: blur(10px); 
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
