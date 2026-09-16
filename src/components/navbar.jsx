@@ -7,7 +7,7 @@ import NavLink from "../shared/navlink";
 const NAV_LINKS = [
   { name: "Shop", href: "#shop" },
   { name: "Our Story", href: "#our-story" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#footer" },
 ];
 
 function Navbar() {

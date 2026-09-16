@@ -7,7 +7,7 @@ import NavLink from "../shared/navlink";
 const NAV_LINKS = [
   { name: "Shop", href: "#shop" },
   { name: "Our Story", href: "#our-story" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#footer" },
 ];
 
 const CONTACT_INFO = [
@@ -29,7 +29,9 @@ function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-(--border) px-4 sm:px-6 pt-14 sm:pt-16 pb-8">
+    <footer
+    id="footer"
+    className="relative border-t border-(--border) px-4 sm:px-6 pt-14 sm:pt-16 pb-8">
       <div className="max-w-6xl mx-auto">
         {/* Main footer content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr] gap-10 sm:gap-12 text-left">
