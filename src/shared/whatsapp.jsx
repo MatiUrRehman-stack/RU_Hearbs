@@ -7,15 +7,16 @@ const whatsappMessage = encodeURIComponent(
 );
 
 const links = [
-    {
+  {
     name: "WhatsApp",
     href: `https://wa.me/923267544688?text=${whatsappMessage}`,
     icon: whatsapp,
   },
 ];
+
 function WhatsApp() {
   return (
-    <div id="social" className="flex items-center justify-center gap-3">
+    <div className="flex items-center justify-center gap-3">
       {links.map(({ name, href, icon }) => (
         <a
           key={name}
@@ -23,7 +24,7 @@ function WhatsApp() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={name}
-          className="group relative flex h-11 w-11 items-center justify-center
+          className="group relative flex h-9 w-9 items-center justify-center
             rounded-full bg-(--social-bg) border border-(--border)
             transition-all duration-300 ease-out
             hover:bg-white hover:border-(--greeen)
@@ -33,7 +34,7 @@ function WhatsApp() {
           <img
             src={icon}
             alt={name}
-            className="button-icon h-5 w-5 object-contain
+            className="button-icon h-4 w-4 object-contain
               transition-transform duration-300 ease-out
               group-hover:scale-110"
           />

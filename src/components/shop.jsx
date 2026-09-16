@@ -7,32 +7,60 @@ import whiteSoap from "../assets/products/whiteningw.jpg";
 
 const PRODUCTS = [
   {
-    id: "acne-green",
+    id: "acne-flower",
     image: greenSoap,
-    heading: "Acne Herbal Soap",
-    description: "Cold-pressed with neem and tea tree to calm and clarify.",
-    price: "500",
+    heading: "Acne Soap — Flower",
+    description:
+      "Tea tree oil, neem powder, and kaolin clay to reduce acne, control excess oil, and clear skin.",
   },
   {
-    id: "whitening-white-1",
+    id: "whitening-flower",
     image: whiteSoap,
-    heading: "Whitening Bar",
-    description: "Gentle clay and citrus blend for brighter, even-toned skin.",
-    price: "500",
+    heading: "Whitening Soap — Flower",
+    description:
+      "Rice flour, milk powder, and vitamin E to brighten skin and improve complexion.",
   },
   {
-    id: "whitening-white-2",
-    image: whiteSoap,
-    heading: "Whitening Bar",
-    description: "Gentle clay and citrus blend for brighter, even-toned skin.",
-    price: "500",
+    id: "acne-heart",
+    image: greenSoap,
+    heading: "Acne Soap — Heart",
+    description:
+      "Tea tree oil, aloe vera, and neem powder to fight acne, redness, and soothe skin.",
   },
   {
-    id: "whitening-white-3",
+    id: "whitening-rose",
     image: whiteSoap,
-    heading: "Whitening Bar",
-    description: "Gentle clay and citrus blend for brighter, even-toned skin.",
-    price: "500",
+    heading: "Whitening Soap — Rose",
+    description:
+      "Rose petals, goat milk, and vitamin E to brighten, nourish, and give skin a natural glow.",
+  },
+  {
+    id: "acne-flower-bloom",
+    image: greenSoap,
+    heading: "Acne Soap — Flower Bloom",
+    description:
+      "Tea tree oil, Moroccan blue clay, and neem extract to help clear acne and tighten pores.",
+  },
+  {
+    id: "whitening-flower-bloom",
+    image: whiteSoap,
+    heading: "Whitening Soap — Flower Bloom",
+    description:
+      "Rice flour, light turmeric, and vitamin E to even skin tone with a smooth, glowing finish.",
+  },
+  {
+    id: "acne-leaf",
+    image: greenSoap,
+    heading: "Acne Soap — Leaf",
+    description:
+      "Tea tree oil, green clay, and neem powder to reduce acne and marks while keeping skin fresh.",
+  },
+  {
+    id: "whitening-leaf",
+    image: whiteSoap,
+    heading: "Whitening Soap — Leaf",
+    description:
+      "Milk powder, oatmeal, and vitamin E to brighten skin with a soft, smooth texture.",
   },
 ];
 
@@ -62,13 +90,12 @@ function Shop() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2
             lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 md:gap-7 lg:gap-8"
         >
-          {PRODUCTS.map(({ id, image, heading, description, price }) => (
+          {PRODUCTS.map(({ id, image, heading, description}) => (
             <Card
               key={id}
               image={image}
               heading={heading}
               description={description}
-              price={price}
             />
           ))}
         </div>

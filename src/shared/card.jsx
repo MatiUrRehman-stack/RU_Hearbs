@@ -1,7 +1,7 @@
 import React from "react";
 import WhatsApp from "./whatsapp";
 
-function Card({ image, heading, description, price, alt }) {
+function Card({ image, heading, description, alt }) {
   return (
     <div
       className="group flex flex-col overflow-hidden rounded-2xl border border-(--border)
@@ -16,6 +16,10 @@ function Card({ image, heading, description, price, alt }) {
           className="h-full w-full object-cover transition-transform duration-500 ease-out
             group-hover:scale-110"
         />
+
+        <div className="absolute bottom-3 right-3 z-10">
+          <WhatsApp />
+        </div>
       </div>
 
       {/* Text content */}
@@ -28,15 +32,7 @@ function Card({ image, heading, description, price, alt }) {
           <p className="text-[14px] sm:text-[15px] leading-[160%] text-(--text)">
             {description}
           </p>
-        )}<div className="flex w-full flex-row items-center justify-between">
-          {price && (
-            <span className="pt-1 text-[15px] font-medium text-(--accent)">
-              <sup>RS </sup>
-              {price}
-            </span>
-          )}
-          <WhatsApp />
-        </div>
+        )}
       </div>
     </div>
   );
