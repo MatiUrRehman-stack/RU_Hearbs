@@ -13,7 +13,7 @@ const whatsappMessage = encodeURIComponent(
 const links = [
     {
     name: "WhatsApp",
-    href: `https://wa.me/923001234567?text=${whatsappMessage}`,
+    href: `https://wa.me/923267544688?text=${whatsappMessage}`,
     icon: whatsapp,
   },
   {
@@ -27,7 +27,6 @@ const links = [
     href: "https://www.tiktok.com/@mrs.ur8?_r=1&_t=ZN-99kIelMIsUA",
     icon: tiktok,
   },
-  { name: "Instagram", href: "https://instagram.com", icon: instagram },
 ];
 function Social() {
   return (

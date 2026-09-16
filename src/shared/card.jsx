@@ -31,7 +31,7 @@ function Card({ image, heading, description, price, alt }) {
 
         {price && (
           <span className="pt-1 text-[15px] font-medium text-(--accent)">
-            {price}
+            <sup>RS  </sup>{price}
           </span>
         )}
       </div>

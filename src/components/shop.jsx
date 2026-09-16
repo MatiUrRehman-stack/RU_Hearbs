@@ -11,28 +11,28 @@ const PRODUCTS = [
     image: greenSoap,
     heading: "Acne Herbal Soap",
     description: "Cold-pressed with neem and tea tree to calm and clarify.",
-    price: "$12",
+    price: "500",
   },
   {
     id: "whitening-white-1",
     image: whiteSoap,
     heading: "Whitening Bar",
     description: "Gentle clay and citrus blend for brighter, even-toned skin.",
-    price: "$14",
+    price: "500",
   },
   {
     id: "whitening-white-2",
     image: whiteSoap,
     heading: "Whitening Bar",
     description: "Gentle clay and citrus blend for brighter, even-toned skin.",
-    price: "$14",
+    price: "500",
   },
   {
     id: "whitening-white-3",
     image: whiteSoap,
     heading: "Whitening Bar",
     description: "Gentle clay and citrus blend for brighter, even-toned skin.",
-    price: "$14",
+    price: "500",
   },
 ];
 
