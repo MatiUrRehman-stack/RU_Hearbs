@@ -29,14 +29,14 @@ function Card({ image, heading, description, price, alt }) {
             {description}
           </p>
         )}<div className="flex w-full flex-row items-center justify-between">
-  {price && (
-    <span className="pt-1 text-[15px] font-medium text-(--accent)">
-      <sup>RS </sup>
-      {price}
-    </span>
-  )}
-  <WhatsApp />
-</div>
+          {price && (
+            <span className="pt-1 text-[15px] font-medium text-(--accent)">
+              <sup>RS </sup>
+              {price}
+            </span>
+          )}
+          <WhatsApp />
+        </div>
       </div>
     </div>
   );
