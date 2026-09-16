@@ -1,4 +1,5 @@
 import React from "react";
+import WhatsApp from "./whatsapp";
 
 function Card({ image, heading, description, price, alt }) {
   return (
@@ -27,13 +28,15 @@ function Card({ image, heading, description, price, alt }) {
           <p className="text-[14px] sm:text-[15px] leading-[160%] text-(--text)">
             {description}
           </p>
-        )}
-
-        {price && (
-          <span className="pt-1 text-[15px] font-medium text-(--accent)">
-            <sup>RS  </sup>{price}
-          </span>
-        )}
+        )}<div className="flex w-full flex-row items-center justify-between">
+  {price && (
+    <span className="pt-1 text-[15px] font-medium text-(--accent)">
+      <sup>RS </sup>
+      {price}
+    </span>
+  )}
+  <WhatsApp />
+</div>
       </div>
     </div>
   );
