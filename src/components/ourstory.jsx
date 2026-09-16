@@ -6,17 +6,17 @@ import ingredientsPhoto from "../assets/story/ingredients.jpg";
 
 const MILESTONES = [
   {
-    year: "2018",
+    year: "2022",
     title: "A kitchen experiment",
     text: "It started with one batch of cold-pressed soap, made on a Sunday, for family and friends who kept asking for more.",
   },
   {
-    year: "2020",
+    year: "2024",
     title: "First small-batch workshop",
     text: "We moved out of the kitchen and into a proper workshop — still small, still handmade, still no shortcuts.",
   },
   {
-    year: "2024",
+    year: "2026",
     title: "RU Hearbs today",
     text: "Every bar is still poured, cut, and cured by hand — just with a few more hands helping now.",
   },
