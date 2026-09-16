@@ -1,17 +1,89 @@
-# React + Vite
+# RU Hearbs — Handmade Soap Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for **RU Hearbs**, a small-batch handmade soap brand. Built to showcase the product catalog and route customers straight into a WhatsApp conversation for ordering — no cart, no checkout, just a clean catalog-to-chat flow suited for a home-based business.
 
-Currently, two official plugins are available:
+## 🌿 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Add your deployed link here]
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive design** — fully adapted for mobile, tablet, laptop, and large desktop screens
+- **Hero section** — brand introduction with product photography and subtle hover animations
+- **Our Story** — brand narrative, milestones timeline, and ingredient highlights
+- **Shop grid** — product catalog with hover effects and per-product WhatsApp ordering
+- **WhatsApp integration** — every product links straight to a pre-filled WhatsApp message, so customers can order in one tap
+- **Reusable component system** — shared `Logo`, `Social`, `NavLink`, `Card`, and `WhatsApp` components used across the site
+- **Custom design tokens** — a warm, natural color palette defined as CSS variables for consistent theming
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# RU_Hearbs
+- [React](https://react.dev/) (Vite)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- Plain CSS custom properties for theming (no CSS-in-JS)
+
+## Project Structure
+
+```
+src/
+├── assets/
+│   ├── images/          # Hero and section imagery
+│   ├── products/        # Product photography
+│   └── story/            # Our Story section photography
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── AboutPure.jsx
+│   ├── OurStory.jsx
+│   └── Shop.jsx
+├── shared/
+│   ├── logo.jsx
+│   ├── socialicons.jsx
+│   ├── NavLink.jsx
+│   ├── card.jsx
+│   └── whatsapp.jsx
+├── index.css             # Design tokens (CSS variables) + base styles
+└── App.jsx
+```
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd <repo-folder>
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` by default.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The production-ready files will be output to the `dist/` folder.
+
+## Customization
+
+- **Colors & theming** — edit the CSS variables in `src/index.css` under `:root`
+- **Products** — update the `PRODUCTS` array in `src/components/Shop.jsx`
+- **Navigation links** — update the `NAV_LINKS` array in `src/components/Navbar.jsx`
+- **WhatsApp number & message** — update `whatsappMessage` and the phone number in `src/shared/whatsapp.jsx`
+
+## License
+
+This project was built as a freelance commission for RU Hearbs. All brand assets, product photography, and content belong to RU Hearbs.
