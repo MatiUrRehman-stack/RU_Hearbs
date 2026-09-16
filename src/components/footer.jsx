@@ -11,7 +11,7 @@ const NAV_LINKS = [
 ];
 
 const CONTACT_INFO = [
-  { label: "Email", value: "hello@ruhearbs.com", href: "mailto:hello@ruhearbs.com" },
+  { label: "Email", value: "hello@ruhearbs.com", href: "#" },
   { label: "Phone", value: "+92 326 7544688", href: "tel:+923267544688" },
 ];
 
